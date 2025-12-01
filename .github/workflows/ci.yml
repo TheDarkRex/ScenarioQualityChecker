@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: Windows 11
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
