@@ -11,9 +11,9 @@
         <version>2.3.3.RELEASE</version>
     </parent>
 
-    <groupId>pl.put.poznan</groupId>
-    <artifactId>io-project-architecture</artifactId>
-    <version>0.1</version>
+    <groupId>L6-Alpha</groupId>
+    <artifactId>scenario-quality-checker</artifactId>
+    <version>0.1.0</version>
 
 	<properties>
         <java.version>11</java.version>
@@ -45,6 +45,15 @@
         </dependency>
     </dependencies>
 
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
 
     <build>
         <plugins>
@@ -55,18 +64,7 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </pluginRepository>
-    </pluginRepositories>
+
 
 
 </project>

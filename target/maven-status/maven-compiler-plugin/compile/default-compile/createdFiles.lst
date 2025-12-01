@@ -1,0 +1,3 @@
+pl\put\poznan\transformer\app\TextTransformerApplication.class
+pl\put\poznan\transformer\rest\TextTransformerController.class
+pl\put\poznan\transformer\logic\TextTransformer.class
