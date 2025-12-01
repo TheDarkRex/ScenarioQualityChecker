@@ -14,7 +14,7 @@ Dla analityków dokumentujących wymagania funkcjonalne za pomocą scenariuszy n
 ### Przykład:
 Tytuł: Dodanie książki\
 Aktorzy:  Bibliotekarz\
-Aktor systemowy: System\
+Aktor systemowy: System
 
 * Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
 * Wyświetla się formularz.
