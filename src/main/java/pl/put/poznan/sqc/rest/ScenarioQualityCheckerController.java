@@ -1,8 +1,7 @@
-package pl.put.poznan.transformer.rest;
+package pl.put.poznan.sqc.rest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-import pl.put.poznan.transformer.logic.TextTransformer;
 
 import java.util.Arrays;
 
