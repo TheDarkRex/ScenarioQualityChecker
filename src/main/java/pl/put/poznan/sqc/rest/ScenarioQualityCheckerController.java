@@ -89,6 +89,10 @@ public class ScenarioQualityCheckerController {
         scenario.accept(visitor);
 
         logger.info("Analyzing steps complete for scenario: {}. Found {} errors.",scenario.getTitle(), visitor.getErrors().size());
-        return "{\n\t\"errors\":\n\t[\n\t\t\"step\": \""+String.join("\"\n\t\t\"step\": \"", visitor.getErrors())+"\"\n\t]\n}";
+        if (visitor.getErrors().size() == 0) {
+            return "{\n\t\"errors\":\n\t[]\n}";
+        } else {
+            return "{\n\t\"errors\":\n\t[\n\t\t\"step\": \""+String.join("\",\n\t\t\"step\": \"", visitor.getErrors())+"\"\n\t]\n}";
+        }
     }
 }
