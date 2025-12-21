@@ -80,5 +80,11 @@ public class ActorCheckVisitor implements Visitor{
         if (!startsWithActor) {
             errors.add(step.getContent());
         }
+
+        if (step.getSubSteps() != null && !step.getSubSteps().isEmpty()) {
+            for (Step subStep : step.getSubSteps()) {
+                visit(subStep);
+            }
+        }
     }
 }
