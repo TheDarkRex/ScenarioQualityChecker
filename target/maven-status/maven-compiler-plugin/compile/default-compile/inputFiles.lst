@@ -1,3 +1,7 @@
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\TextTransformer.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\rest\TextTransformerController.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\app\TextTransformerApplication.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\vistor\StepCounterVisitor.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\vistor\Visitor.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Visitable.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\rest\ScenarioQualityCheckerController.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Scenario.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\app\ScenarioQualityCheckerApplication.java
+C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Step.java

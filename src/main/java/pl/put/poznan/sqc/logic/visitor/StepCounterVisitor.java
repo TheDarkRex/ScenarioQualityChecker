@@ -1,4 +1,4 @@
-package pl.put.poznan.sqc.logic.vistor;
+package pl.put.poznan.sqc.logic.visitor;
 import pl.put.poznan.sqc.model.Scenario;
 import pl.put.poznan.sqc.model.Step;
 

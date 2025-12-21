@@ -1,0 +1,24 @@
+### Test liczenia kroków
+POST http://localhost:8080/api/calculate/steps
+Content-Type: application/json
+
+{
+  "title": "Przykładowy scenariusz",
+  "actors": ["Bibliotekarz"],
+  "systemActor": "System",
+  "steps": [
+    {
+      "content": "Bibliotekarz loguje się do systemu"
+    },
+    {
+      "content": "System wyświetla menu",
+      "subSteps": [
+        { "content": "System ładuje ikonki" },
+        { "content": "System sprawdza uprawnienia" }
+      ]
+    },
+    {
+      "content": "Bibliotekarz wybiera opcję dodania książki"
+    }
+  ]
+}

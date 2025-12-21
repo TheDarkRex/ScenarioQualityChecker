@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/calculate/steps
+Content-Type: application/json
+Content-Length: 445
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Przykładowy scenariusz",
+  "actors": ["Bibliotekarz"],
+  "systemActor": "System",
+  "steps": [
+    {
+      "content": "Bibliotekarz loguje się do systemu"
+    },
+    {
+      "content": "System wyświetla menu",
+      "subSteps": [
+        { "content": "System ładuje ikonki" },
+        { "content": "System sprawdza uprawnienia" }
+      ]
+    },
+    {
+      "content": "Bibliotekarz wybiera opcję dodania książki"
+    }
+  ]
+}
+
+<> 2025-12-21T113908.200.json
+
+###
+
