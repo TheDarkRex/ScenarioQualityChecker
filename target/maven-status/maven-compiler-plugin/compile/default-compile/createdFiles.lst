@@ -1,3 +1,7 @@
-pl\put\poznan\transformer\app\TextTransformerApplication.class
-pl\put\poznan\transformer\rest\TextTransformerController.class
-pl\put\poznan\transformer\logic\TextTransformer.class
+pl\put\poznan\sqc\logic\vistor\StepCounterVisitor.class
+pl\put\poznan\sqc\model\Step.class
+pl\put\poznan\sqc\rest\ScenarioQualityCheckerController.class
+pl\put\poznan\sqc\app\ScenarioQualityCheckerApplication.class
+pl\put\poznan\sqc\model\Scenario.class
+pl\put\poznan\sqc\model\Visitable.class
+pl\put\poznan\sqc\logic\vistor\Visitor.class
