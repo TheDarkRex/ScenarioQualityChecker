@@ -41,11 +41,12 @@ public class ScenarioQualityCheckerController {
      */
     @PostMapping("/calculate/steps")
     public int calculateSteps(@RequestBody Scenario scenario) {
-        logger.debug("Received request to count steps for scenario: {}", scenario.getTitle());
+        logger.info("Received request to count steps for scenario: {}", scenario.getTitle());
 
         StepCounterVisitor visitor = new StepCounterVisitor();
         scenario.accept(visitor);
 
+        logger.info("Counting steps complete for scenario: {}. Count is {}.",scenario.getTitle() , visitor.getStepCount());
         return visitor.getStepCount();
     }
 
@@ -62,11 +63,12 @@ public class ScenarioQualityCheckerController {
      */
     @PostMapping("/calculate/keywords")
     public int calcuateKeywords(@RequestBody Scenario scenario) {
-        logger.debug("Received request to count keywords for scenario: {}", scenario.getTitle());
+        logger.info("Received request to count keywords for scenario: {}", scenario.getTitle());
 
         KeywordCounterVisitor visitor = new KeywordCounterVisitor();
         scenario.accept(visitor);
 
+        logger.info("Counting keywords complete for scenario: {}. Count is {}.",scenario.getTitle() , visitor.getKeywordCount());
         return visitor.getKeywordCount();
     }
 
@@ -83,11 +85,12 @@ public class ScenarioQualityCheckerController {
      */
     @PostMapping("/analyze/scenario")
     public List<String> verifyScenario(@RequestBody Scenario scenario) {
-        logger.debug("Received request to verify correct actor assignment for scenario: {}", scenario.getTitle());
+        logger.info("Received request to verify correct actor assignment for scenario: {}", scenario.getTitle());
 
         ActorCheckVisitor visitor = new ActorCheckVisitor();
         scenario.accept(visitor);
 
+        logger.info("Analyzing steps complete for scenario: {}. Found {} errors.",scenario.getTitle(), visitor.getErrors().size());
         return visitor.getErrors();
     }
 }
