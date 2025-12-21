@@ -25,4 +25,10 @@ public class Scenario implements Visitable {
 
     public List<Step> getSteps() { return steps; }
     public void setSteps(List<Step> steps) { this.steps = steps; }
+
+    public List<String> getActors() { return actors; }
+    public void setActors(List<String> actors) { this.actors = actors; }
+
+    public String getSystemActor() { return systemActor; }
+    public void setSystemActor(String systemActor) { this.systemActor = systemActor; }
 }
