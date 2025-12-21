@@ -31,7 +31,7 @@ Aktor systemowy: System
 * System informuje o poprawnym dodaniu książki.
   
 ## Autorzy
-- Dominik Durlik 16011
+- Dominik Durlik 160111
 - Jakub Biernat 160248
 - Zofia Kapcińska 160227
 - Eryk Masian 160228
