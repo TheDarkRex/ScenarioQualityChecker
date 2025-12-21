@@ -71,6 +71,9 @@
                         <goals>
                             <goal>javadoc</goal>
                         </goals>
+                        <configuration>
+                            <show>private</show>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
