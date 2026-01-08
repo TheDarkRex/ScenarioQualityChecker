@@ -11,6 +11,8 @@
         <version>2.3.3.RELEASE</version>
     </parent>
 
+
+
     <groupId>L6-Alpha</groupId>
     <artifactId>scenario-quality-checker</artifactId>
     <version>0.3.0</version>

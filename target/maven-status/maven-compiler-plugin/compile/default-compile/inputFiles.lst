@@ -1,7 +1,9 @@
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\vistor\StepCounterVisitor.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\vistor\Visitor.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Visitable.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\rest\ScenarioQualityCheckerController.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Scenario.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\app\ScenarioQualityCheckerApplication.java
-C:\Users\erykm\studia\inz_opr\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Step.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Visitable.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\visitor\StepCounterVisitor.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Scenario.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\visitor\Visitor.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\rest\ScenarioQualityCheckerController.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\app\ScenarioQualityCheckerApplication.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\visitor\ActorCheckVisitor.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\model\Step.java
+D:\IntelliJ Projects\ScenarioQualityChecker\src\main\java\pl\put\poznan\sqc\logic\visitor\KeywordCounterVisitor.java

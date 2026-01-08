@@ -1,7 +1,9 @@
-pl\put\poznan\sqc\logic\vistor\StepCounterVisitor.class
+pl\put\poznan\sqc\logic\visitor\KeywordCounterVisitor.class
+pl\put\poznan\sqc\logic\visitor\Visitor.class
 pl\put\poznan\sqc\model\Step.class
+pl\put\poznan\sqc\logic\visitor\ActorCheckVisitor.class
 pl\put\poznan\sqc\rest\ScenarioQualityCheckerController.class
+pl\put\poznan\sqc\logic\visitor\StepCounterVisitor.class
 pl\put\poznan\sqc\app\ScenarioQualityCheckerApplication.class
 pl\put\poznan\sqc\model\Scenario.class
 pl\put\poznan\sqc\model\Visitable.class
-pl\put\poznan\sqc\logic\vistor\Visitor.class

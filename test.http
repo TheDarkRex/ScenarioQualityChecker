@@ -1,5 +1,5 @@
 ### Test liczenia kroków
-POST http://localhost:8080/api/calculate/steps
+POST http://localhost:8080/api/analyze/scenario
 Content-Type: application/json
 
 {
