@@ -60,7 +60,7 @@ public class ScenarioQualityCheckerController {
      * @return liczba wykrytych słów kluczowych
      */
     @PostMapping("/calculate/keywords")
-    public String calcuateKeywords(@RequestBody Scenario scenario) {
+    public String calculateKeywords(@RequestBody Scenario scenario) {
         logger.info("Received request to count keywords for scenario: {}", scenario.getTitle());
 
         KeywordCounterVisitor visitor = new KeywordCounterVisitor();
