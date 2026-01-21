@@ -1,0 +1,12 @@
+### Test integracji z "zewnętrznym" konwerterem XML
+POST http://localhost:8080/api/get-xml
+Content-Type: application/json
+
+{
+  "title": "Scenariusz REST Test",
+  "actors": ["System"],
+  "systemActor": "Serwer",
+  "steps": [
+    { "content": "Krok 1" }
+  ]
+}
