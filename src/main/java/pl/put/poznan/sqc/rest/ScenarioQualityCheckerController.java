@@ -1,11 +1,14 @@
 package pl.put.poznan.sqc.rest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
 
+import pl.put.poznan.sqc.logic.RemoteXmlService;
 import pl.put.poznan.sqc.logic.visitor.ActorCheckVisitor;
 import pl.put.poznan.sqc.logic.visitor.KeywordCounterVisitor;
 import pl.put.poznan.sqc.logic.visitor.StepCounterVisitor;
@@ -25,7 +28,13 @@ public class ScenarioQualityCheckerController {
 
     /** Logger wykorzystywany do celów diagnostycznych. */
     private static final Logger logger = LoggerFactory.getLogger(ScenarioQualityCheckerController.class);
-    
+
+    private final RemoteXmlService remoteXmlService;
+
+    public ScenarioQualityCheckerController(RemoteXmlService remoteXmlService) {
+        this.remoteXmlService = remoteXmlService;
+    }
+
     /**
      * Oblicza całkowitą liczbę kroków w scenariuszu.
      * <p>
@@ -94,5 +103,11 @@ public class ScenarioQualityCheckerController {
         } else {
             return "{\n\t\"errors\":\n\t[\n\t\t\"step\": \""+String.join("\",\n\t\t\"step\": \"", visitor.getErrors())+"\"\n\t]\n}";
         }
+    }
+
+    @PostMapping(value = "/get-xml", produces = MediaType.APPLICATION_XML_VALUE)
+    public String getScenarioAsXml(@RequestBody Scenario scenario) {
+        logger.info("Received request to convert scenario to XML: {}", scenario.getTitle());
+        return remoteXmlService.convertScenarioToXml(scenario);
     }
 }
